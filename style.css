@@ -145,7 +145,8 @@ button:hover {
     .content {
         max-width: 90%;
     }
-    form{
+
+    form {
         padding-bottom: 10px;
     }
 }
