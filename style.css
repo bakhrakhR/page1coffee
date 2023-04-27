@@ -83,7 +83,7 @@ button:hover {
 .leftside {
     width: 60%;
     height: 100vh;
-    background-image: url(../img/Coffee.png);
+    background-image: url(img/Coffee.png);
     background-size: cover;
     background-position: center;
 
@@ -110,7 +110,7 @@ button:hover {
     .leftside {
         width: 100%;
         height: 60vh;
-        background-image: url(../img/Coffee.png);
+        background-image: url(img/Coffee.png);
         background-size: fill;
         background-position: center;
     }
