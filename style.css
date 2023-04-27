@@ -1,0 +1,151 @@
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+}
+
+h1 {
+    color: rgba(2, 2, 83, 1);
+    height: rgba(2, 2, 83, 1);
+    font: normal normal 900 2.6875rem/3.9375rem Heebo;
+    margin-bottom: 1.375rem;
+    opacity: 1;
+    text-align: center;
+}
+
+p {
+    font: normal normal normal 20px/29px Heebo;
+    letter-spacing: 0rem;
+    color: rgba(2, 2, 83, 1);
+    opacity: 1;
+    margin-bottom: 3.4375rem;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+label {
+    font: normal normal 1rem/1.5rem Heebo;
+    letter-spacing: 0rem;
+    color: rgba(44, 44, 44, 1);
+    opacity: 1;
+    font-weight: bold;
+}
+
+
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 3.125rem;
+    max-width: 26.125rem;
+    background: rgba(246, 246, 246, 1) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border: none;
+    border-bottom: 4px solid rgba(2, 2, 83, 1);
+    margin-bottom: 2.0625rem;
+    font-size: 1.5625rem;
+}
+
+button {
+    width: 35%;
+    height: 15%;
+    background: rgba(2, 2, 83, 1) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    color: rgba(255, 255, 255, 1);
+    font: normal normal bold 22px/30px Heebo;
+    letter-spacing: 0.33px;
+    color: rgba(255, 255, 255, 1);
+    opacity: 1;
+    transition: background-color 0.2s, color 0.2s, scale 0.2s;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(2, 2, 83, 1);
+    scale: 1.1;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.leftside {
+    width: 60%;
+    height: 100vh;
+    background-image: url(/img/Coffee.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.rightside {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.content {
+    max-width: 70%;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leftside {
+        width: 100%;
+        height: 60vh;
+        background-image: url(../img/Coffee.png);
+        background-size: fill;
+        background-position: center;
+    }
+
+    .rightside {
+        width: 100%;
+    }
+
+    p {
+        margin-bottom: 0.5rem;
+    }
+
+    h1 {
+        margin-bottom: 0.5rem;
+    }
+}
+
+
+@media screen and (max-width: 520px) {
+    p {
+        display: none;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .leftside {
+        background-size: contain;
+    }
+
+    .content {
+        max-width: 90%;
+    }
+    form{
+        padding-bottom: 10px;
+    }
+}
